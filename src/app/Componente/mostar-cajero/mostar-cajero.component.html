@@ -1,0 +1,23 @@
+<br>
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-center">RETIROS EN EFECTIVO</h2>
+        </div>
+        <div class="card-body">
+            <th class="text-center">DIGITA LA CANTIDAD DE SALDO A RETIRAR</th>
+            <br>
+            <form>
+                <div class="form-group">
+                    <label for="cantidad">CANTIDAD</label>
+                    <input type="number" [(ngModel)]="cantidadRetirar" name="cantidad" class="form-control" placeholder="Ej: 2500" required>
+                </div>
+                <br>
+                <div style="text-align: center;">
+                    <button type="button" class="btn btn-success" (click)="retirarDinero()">CONFIRMAR</button>
+                </div>                
+            </form>
+        </div>
+    </div>
+</div>
